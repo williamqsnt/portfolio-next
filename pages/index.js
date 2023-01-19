@@ -71,7 +71,7 @@ export default function Home() {
       
      
       <div className='title'>
-        <p style={{color : 'rgb(119, 180, 227)'}}>DÉVELOPPEUR REACT </p>
+        <p style={{color : 'rgb(119, 180, 227)'}}>WILLIAM QUESNOT - DÉVELOPPEUR REACT </p>
       
         <br/>
         <h1>Le développeur web qui donnera vie à vos 
@@ -135,6 +135,9 @@ button {
 
 
 const Container = styled.div`
+
+
+  
 
 
 
