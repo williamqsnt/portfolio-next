@@ -156,7 +156,7 @@ const Container = styled.div`
     }
 
     .title {
-      margin-top : 5em;
+      margin-top : 7em;
       display : flex;
       align-items : center;
       justify-content:  center;
