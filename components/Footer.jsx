@@ -9,10 +9,9 @@ export default function Footer() {
       <div style={{width : '100%', height : '100%', display : 'flex',flexDirection : 'column'  ,alignItems : 'center', justifyContent : 'space-around'}}>
 
           <div style={{display : 'flex'}} >
-            <a href="#about" style={{textDecoration : 'none', color : 'rgb(119, 180, 227'}}><li style={{listStyle : 'none', margin : '0.5em'}}>About</li></a>
-            <a href="#skills" style={{textDecoration : 'none', color : 'rgb(119, 180, 227'}}><li style={{listStyle : 'none', margin : '0.5em'}}>Skills</li></a>
-            <a href="#skills" style={{textDecoration : 'none', color : 'rgb(119, 180, 227'}}><li style={{listStyle : 'none', margin : '0.5em'}}>Experiences</li></a>
-            <a href="#projects" style={{textDecoration : 'none', color : 'rgb(119, 180, 227'}}><li style={{listStyle : 'none', margin : '0.5em'}}>Projects</li></a>
+            <a href="#competences" style={{textDecoration : 'none', color : 'rgb(119, 180, 227'}}><li style={{listStyle : 'none', margin : '0.5em'}}>Compétences</li></a>
+            <a href="Projets" style={{textDecoration : 'none', color : 'rgb(119, 180, 227'}}><li style={{listStyle : 'none', margin : '0.5em'}}>Projets</li></a>
+        
           </div>
      
           <div>
