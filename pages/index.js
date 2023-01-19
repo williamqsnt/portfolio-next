@@ -14,6 +14,7 @@ import Competences from '../components/Competences'
 import { useEffect, useRef, useState } from "react"
 import Typed from 'typed.js'
 import Projets from '@/components/Projets'
+import Footer from '@/components/Footer'
 
 
 
@@ -61,9 +62,9 @@ export default function Home() {
     { isMenu && (
       <div style={{backgroundColor : '#1b1a27', position : 'fixed', right : '0px', top : '0px', height : '50vh', width : '400px', borderRadius : '10px', boxShadow : '0px 0px 4px white', display : 'flex', alignItems : 'center', justifyContent : 'center', flexDirection :'column', zIndex : '1000'}}>
           <button onClick={()=> setMenu(false)} style={{backgroundColor : 'unset', border : 'unset'}}><p style={{fontSize : '4em', color : 'white'}}>&times;</p></button>
-          <a href="https://hashnode.com/@williamqsnt" target="_blank" style={{margin : '1em', fontSize : '1.5em', fontWeight :'500', color :'white'}}>Accéder à mon blog</a>
-          <a href="#competences" style={{margin : '1em', fontSize : '1.5em',fontWeight :'500', color : 'white'}}>Mes compétences</a>
-          <a href="#projets" style={{ margin : '1em', fontSize : '1.5em', fontWeight :'500', color : 'white'}}>Mes projets</a>
+          <a onClick={()=> setMenu(false)}  href="https://hashnode.com/@williamqsnt" target="_blank" style={{margin : '1em', fontSize : '1.5em', fontWeight :'500', color :'white'}}>Accéder à mon blog</a>
+          <a onClick={()=> setMenu(false)}  href="#competences" style={{margin : '1em', fontSize : '1.5em',fontWeight :'500', color : 'white'}}>Mes compétences</a>
+          <a onClick={()=> setMenu(false)}  href="#projets" style={{ margin : '1em', fontSize : '1.5em', fontWeight :'500', color : 'white'}}>Mes projets</a>
       </div>
     )}
           
@@ -98,6 +99,7 @@ export default function Home() {
       </div>
       
 
+      <Footer />
     
 
     </Container>
