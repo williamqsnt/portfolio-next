@@ -33,7 +33,7 @@ export default function Projets () {
                 <p style={{fontFamily : 'fantasy', color :'grey'}}>&lt;/h2&gt;</p>
             </div>
           
-        <div className='allpage'>
+        <div className='allpage' id="projet">
             
             <div className='page'>
                 <Slider {...settings}>
@@ -47,7 +47,7 @@ export default function Projets () {
                                 <li>Email.js</li>
                             </ul>
                             <p>{Proceed[0].desc}</p>
-                            <a style={{width : '200px', color : "#1b1a27", display : 'flex', aligItems : 'center', justifyContent : 'center', boxShadow :'unset', margin : 'unset'}} href="">Voir le site</a>
+                            <a style={{width : '240px', color : "#1b1a27", display : 'flex', aligItems : 'center', justifyContent : 'center', boxShadow :'unset', margin : 'unset'}} href="#projet">Site indisponible</a>
                             
                         </div>     
                     </div>
@@ -127,7 +127,7 @@ h2{
       margin : 1em;
       color : lightgrey;
       border-radius : 20px;
-      height : 480px;
+      height : 520px;
     
 
     

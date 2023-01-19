@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import menu from 'public/img/menu.svg'
 const inter = Inter({ subsets: ['latin'] })
 
 
@@ -11,7 +11,7 @@ import notion from 'public/video/notion.mp4'
 
 
 import Competences from '../components/Competences'
-import { useEffect, useRef } from "react"
+import { useEffect, useRef, useState } from "react"
 import Typed from 'typed.js'
 import Projets from '@/components/Projets'
 
@@ -19,6 +19,8 @@ import Projets from '@/components/Projets'
 
 export default function Home() {
 
+
+  const [isMenu, setMenu] = useState(false)
 
 
   const textRef = useRef(null);
@@ -41,6 +43,32 @@ export default function Home() {
 
   return (
     <Container>
+      
+    <Menus>
+        <div>
+                <p style={{fontSize : '3.5em'}}>WQ</p>
+            </div>
+           
+            <div>
+                <button onClick={()=> setMenu(true)}>
+                    <p style={{fontSize : '1.5em', color : 'black'}}>Menu</p>
+                    <Image src={menu} alt="icon menu" width={35}/>
+                </button>
+            </div>
+
+    </Menus>
+
+    { isMenu && (
+      <div style={{backgroundColor : '#1b1a27', position : 'fixed', right : '0px', top : '0px', height : '50vh', width : '400px', borderRadius : '10px', boxShadow : '0px 0px 4px white', display : 'flex', alignItems : 'center', justifyContent : 'center', flexDirection :'column', zIndex : '1000'}}>
+          <button onClick={()=> setMenu(false)} style={{backgroundColor : 'unset', border : 'unset'}}><p style={{fontSize : '4em', color : 'white'}}>&times;</p></button>
+          <a href="https://hashnode.com/@williamqsnt" target="_blank" style={{margin : '1em', fontSize : '1.5em', fontWeight :'500', color :'white'}}>Accéder à mon blog</a>
+          <a href="#competences" style={{margin : '1em', fontSize : '1.5em',fontWeight :'500', color : 'white'}}>Mes compétences</a>
+          <a href="#projets" style={{ margin : '1em', fontSize : '1.5em', fontWeight :'500', color : 'white'}}>Mes projets</a>
+      </div>
+    )}
+          
+      
+     
       <div className='title'>
         <p style={{color : 'rgb(119, 180, 227)'}}>DÉVELOPPEUR REACT </p>
       
@@ -55,14 +83,20 @@ export default function Home() {
             Mon objectif est de créer des sites web qui non seulement répondent aux besoins de mes clients, mais qui les dépassent</p>
         </div>
 
-        <a href="mailto:quesnot.william@hotmail.com">Collaborez dès maintenant</a>
+        <a className='collab' href="mailto:quesnot.william@hotmail.com">Collaborez dès maintenant</a>
 
         <video src={notion} autoPlay muted loop id="my-video" />        
       </div>
 
-      <Competences />
+      <div id="competences">
+        <Competences />
+      </div>
+      
 
-      <Projets />
+      <div id="projets">
+        <Projets  />
+      </div>
+      
 
     
 
@@ -71,6 +105,31 @@ export default function Home() {
 }
 
 
+
+
+
+const Menus = styled.div`
+
+display : flex;
+align-items : center;
+justify-content : space-between;
+padding : 2em;
+
+
+button {
+    display : flex;
+    align-items : center;
+    border : none;
+    background-color : unset;
+    
+
+}
+
+
+
+
+
+`
 
 
 const Container = styled.div`
@@ -125,7 +184,7 @@ const Container = styled.div`
       margin-top : 2em;
     }
 
-    a {
+    .collab {
       padding : 1em 2em;
       font-size : 1.25em;
       background-color : rgb(185, 219, 237);
