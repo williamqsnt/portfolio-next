@@ -26,7 +26,7 @@ export default function Competences() {
             <section>
                 <div style={{marginTop :'5em'}}>
                     <div>
-                        <p>Langages de programmation</p>
+    
                         <div className="comp">
                             <Image src={lp} alt="compétences principales" width={600} />
                         </div>

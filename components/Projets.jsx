@@ -143,7 +143,7 @@ h2{
           
           font-style : arial;
           margin : 1em;
-          text-align : center;
+          text-align : justify;
           
          
       }
