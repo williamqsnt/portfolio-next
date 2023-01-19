@@ -1,15 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
-import styles from '@/styles/Home.module.css'
 import menu from 'public/img/menu.svg'
-const inter = Inter({ subsets: ['latin'] })
-
-
 import styled from '@emotion/styled'
 import notion from 'public/video/notion.mp4'
-
-
 import Competences from '../components/Competences'
 import { useEffect, useRef, useState } from "react"
 import Typed from 'typed.js'
@@ -44,6 +37,9 @@ export default function Home() {
 
   return (
     <Container>
+      <Head>
+        <title>Développeur web - William Quesnot</title>
+      </Head>
       
     <Menus>
         <div>

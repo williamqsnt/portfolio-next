@@ -47,7 +47,7 @@ export default function Projets () {
                                 <li>Email.js</li>
                             </ul>
                             <p>{Proceed[0].desc}</p>
-                            <a style={{width : '240px', color : "#1b1a27", display : 'flex', aligItems : 'center', justifyContent : 'center', boxShadow :'unset', margin : 'unset'}} href="#projet">Site indisponible</a>
+                            <a className="collab" style={{width : '240px', color : "#1b1a27", display : 'flex', aligItems : 'center', justifyContent : 'center', boxShadow :'unset', margin : 'unset'}} href="#projet">Site indisponible</a>
                             
                         </div>     
                     </div>
@@ -66,6 +66,23 @@ export default function Projets () {
 
 
 const Container = styled.div`
+
+.collab {
+    padding : 1em 2em;
+    font-size : 1.25em;
+    background-color : rgb(185, 219, 237);
+    border : none;
+    transition : 0.2s;
+    cursor : pointer;
+    border-radius : 5px;
+    box-shadow : 2px 4px 0.5em lightgrey;
+    margin : 1em;
+    font-weight : 500;
+
+    :hover{
+      background-color : rgb(119, 180, 227);
+    }
+  }
 
 
 ul{
